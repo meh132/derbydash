@@ -8,8 +8,12 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_table
+import plotly.graph_objs as go
 
 import pandas as pd
+#from track import *
+from Tab2 import *
+from Tab1 import *
 
 # Input and upload libary
 from dash.dependencies import Input, Output, State
@@ -115,36 +119,21 @@ app.layout = html.Div([
 def render_content(tab):
     if tab == 'tab-1':
         return html.Div([
-            html.H3('Race Setup'),
-            dcc.Upload(
-                id='upload-data',
-                children=html.Div([
-                    'Drag and Drop or ',
-                    html.A('Select Files')
-                ]),
-                style={
-                    'width': '80%',
-                    'height': '60px',
-                    'lineHeight': '60px',
-                    'borderWidth': '1px',
-                    'borderStyle': 'dashed',
-                    'borderRadius': '5px',
-                    'textAlign': 'center',
-                    'margin': '10px'
-                },
-                multiple=True
-            ),
-            html.Div(id='output-data-upload'), 
+            gen_tab1()
+
         ])
     elif tab == 'tab-2':
-        return html.Div([
-            html.H3('Tab content 2')
-        ])
+        return html.Div(children=[
+        gen_tab2()
+        ]
+        )
+        
     elif tab == 'tab-3':
         return html.Div(children=[
             html.H1(children='Race Results'),
             html.H4(children='Pack Pinewood Derby'),
             generate_table(test_df),
+                 
             html.Div(children='''
                 Dash: A web application framework for Python.
                 '''),
@@ -153,29 +142,19 @@ def render_content(tab):
                 id='example-graph',
                 figure={
                     'data': [
-                        go.Scatter(
-                            x=results[results['den'] == i]['lane'],
-                    y=results[results['den'] == i]['time'],
-                    text=results[results['den'] == i]['name'],
-                    mode='markers',
-                    opacity=0.7,
-                    marker={
-                        'size': 15,
-                        'line': {'width': 0.5, 'color': 'white'}
-                    },
-                    name=i
-                ) for i in results.name.unique()
-            ],
-            'layout': go.Layout(
-                xaxis={'type': 'log', 'title': 'Race Results'},
-                yaxis={'title': 'Time'},
-                margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
-                legend={'x': 0, 'y': 1},
-                hovermode='closest'
-                )
-            }
-          )
-        ])
+                        {
+                            'x': test_df['race'],
+                            'y': test_df['time'],
+                            'text': test_df['name'],
+                            'mode': 'markers',
+                            'marker': {'color': test_df['lane']}
+                        }
+                    ],
+
+                }
+            )
+        ]
+        )
 
 # Callback after upload
 @app.callback(Output('output-data-upload', 'children'),
