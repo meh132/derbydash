@@ -12,8 +12,9 @@ import plotly.graph_objs as go
 
 import pandas as pd
 #from track import *
-from Tab2 import *
 from Tab1 import *
+from Tab2 import *
+from Tab3 import *
 
 # Input and upload libary
 from dash.dependencies import Input, Output, State
@@ -21,17 +22,6 @@ from dash.dependencies import Input, Output, State
 
 test_df = pd.read_csv('./resultsFile.csv')
 
-# Genarte table
-def generate_table(dataframe, max_rows=10):
-    return html.Table(
-        # Header
-        [html.Tr([html.Th(col) for col in dataframe.columns])] +
-
-        # Body
-        [html.Tr([
-            html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-        ]) for i in range(min(len(dataframe), max_rows))]
-    )
 
 
 # Pasrs CSV upload - upload races and racers
@@ -124,37 +114,14 @@ def render_content(tab):
         ])
     elif tab == 'tab-2':
         return html.Div(children=[
-        gen_tab2()
-        ]
-        )
+            gen_tab2()
+        ])
         
     elif tab == 'tab-3':
         return html.Div(children=[
-            html.H1(children='Race Results'),
-            html.H4(children='Pack Pinewood Derby'),
-            generate_table(test_df),
-                 
-            html.Div(children='''
-                Dash: A web application framework for Python.
-                '''),
-
-            dcc.Graph(
-                id='example-graph',
-                figure={
-                    'data': [
-                        {
-                            'x': test_df['race'],
-                            'y': test_df['time'],
-                            'text': test_df['name'],
-                            'mode': 'markers',
-                            'marker': {'color': test_df['lane']}
-                        }
-                    ],
-
-                }
-            )
-        ]
-        )
+            gen_tab3(test_df)
+            
+        ])
 
 # Callback after upload
 @app.callback(Output('output-data-upload', 'children'),
