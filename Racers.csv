@@ -1,0 +1,52 @@
+Number,Name,Den,Category
+0,"--",-,-
+1,"Day, Arthur",0 - LION,Lion
+2,"Peterson, Reed",0 - LION,Lion
+3,"Repsher, Miles",0 - LION,Lion
+4,"Capone, Declan",1 - TIGER,Pack
+5,"Donnarumma, Liam",1 - TIGER,Pack
+6,"Horan, Theodore",1 - TIGER,Pack
+7,"McManus, Patrick",1 - TIGER,Pack
+8,"Rosborough, Jack",1 - TIGER,Pack
+9,"Barthelmas, Aiden",2 - WOLF,Pack
+10,"Edmonds, Harvey",2 - WOLF,Pack
+11,"Grabitzky, Sebastian",2 - WOLF,Pack
+12,"Hancock, James",2 - WOLF,Pack
+13,"Kalinowski, Alek",2 - WOLF,Pack
+14,"Kelley, Andrew",2 - WOLF,Pack
+15,"Knapp, Evan",2 - WOLF,Pack
+16,"Kraszewski, Jack",2 - WOLF,Pack
+17,"Siebeneck, Jack",2 - WOLF,Pack
+18,"Straka, Trevor",2 - WOLF,Pack
+19,"Gagne, Jameson",3 - BEAR,Pack
+20,"Glose, Owen",3 - BEAR,Pack
+21,"Hollis, Dylan",3 - BEAR,Pack
+22,"Horan, Robert",3 - BEAR,Pack
+23,"Kerls, Liam",3 - BEAR,Pack
+24,"Ketchen, Scott",3 - BEAR,Pack
+25,"Letts, Garrison",3 - BEAR,Pack
+26,"Blackler, Caleb",4 - WEBLOS I,Pack
+27,n/a,na,na
+28,"Edmonds, Teddy",4 - WEBLOS I,Pack
+29,"Endres, Kellam",4 - WEBLOS I,Pack
+30,"Kelly, Maurice (Joe)",4 - WEBLOS I,Pack
+31,"Longo, Derek",4 - WEBLOS I,Pack
+32,"McBride, Pat",4 - WEBLOS I,Pack
+33,"Meyers, William",4 - WEBLOS I,Pack
+34,"VanMarkwyk, Niko",4 - WEBLOS I,Pack
+35,"Ward, Patrick",4 - WEBLOS I,Pack
+36,"Hancock, Daniel",5 - WEBLOS II,Pack
+37,"Ketchen, Sean",5 - WEBLOS II,Pack
+38,"Pausley, Sean",5 - WEBLOS II,Pack
+39,"Terry, Ian",5 - WEBLOS II,Pack
+40,"Donnarumma, Rob",Leader,Anything Goes 5
+41,"Koch, John",Leader,Anything Goes 5
+42,"Straka, Josh",Leader,Anything Goes 5
+43,"Hollis, Al",Leader,Anything Goes 10
+44,"Kelly, Jay",Leader,Anything Goes 5
+45,"Hancock, Mike",Leader,Anything Goes 10
+46,"Straka, Samantha",Sibling,Anything Goes 5
+47,"Straka, Julienne",Sibling,Anything Goes 5
+48,"McBride, Elisa",Sibling,Anything Goes 5
+49,"Donnarumma, Cole",Sibling,Lion
+50,"Blacker, Steven",Leader,Anything Goes 5

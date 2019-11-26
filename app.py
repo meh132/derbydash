@@ -21,6 +21,18 @@ from dash.dependencies import Input, Output, State
 
 
 test_df = pd.read_csv('./resultsFile.csv')
+#leader_df = test_df
+#leader_df = test_df.groupby(['den','car','name']).agg({'car':'size', 'time':'mean'}).rename(columns={'car':'Races Completed'}).sort_values('time', ascending=True)
+#leader_df  = test_df.groupby('car').apply(lambda x: x.drop([x['time'].idxmax()])).rename_axis(['time','time']).groupby('car').agg({'car':'size', 'time':'mean'}).rename(columns={'car':'Races Completed','time':'Average Time'}).sort_values('Average Time', ascending=True)
+#leader_df = test_df.groupby(['den','car','name']).agg({'car':'size', 'time':'mean'}).rename(columns={'car':'Races Completed'}).sort_values(['den','time'], ascending=False)
+leader_df = test_df.groupby(['car', 'name'], as_index=False).agg({"time": "mean"}).sort_values('time', ascending=True)
+leader1_df = test_df.groupby('car') \
+    .apply(lambda x: x.drop([x['time'].idxmax()]))\
+    .rename_axis(['time','time'])\
+    .groupby('car' )\
+    .agg({'car':'size', 'time':'mean'}) \
+    .rename(columns={'car':'Races Completed','time':'Average Time'}) \
+    .sort_values('Average Time', ascending=True)
 
 
 
@@ -114,7 +126,7 @@ def render_content(tab):
         ])
     elif tab == 'tab-2':
         return html.Div(children=[
-            gen_tab2()
+            gen_tab2(leader_df)
         ])
         
     elif tab == 'tab-3':

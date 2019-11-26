@@ -6,7 +6,7 @@ import dash_table
 # Genarte table
 def gen_tab1():
     return html.Div([
-            html.H3('Race Setup'),
+            html.H2('Race Setup'),
             dcc.Upload(
                 id='upload-data',
                 children=html.Div([
@@ -26,4 +26,20 @@ def gen_tab1():
                 multiple=True
             ),
             html.Div(id='output-data-upload'),
+            html.H2('Track Setup'),
+            html.H3('Connect to Track'), 
+            html.Button('Connect', id='connect-button'),
+            html.H3('Lane Order'),
+            html.Button('Reverse Lanes', id='lane-reverse-button'),
     ]) 
+
+
+def serialwrite(code):
+    command = code +'\r\n'
+    newcommand = command.encode('ascii')
+    #ser.write(newcommand)
+    #results = ser.readline()
+    results = 'xxx'
+    #laneresults = results.decode().split()
+    #print(laneresults)
+    return results
