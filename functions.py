@@ -5,7 +5,7 @@ import dash_table
 
 
 # Genarte table1
-def generate_table(dataframe, max_rows=5):
+def generate_table(dataframe, max_rows=15):
     return html.Table(
         # Header
         [html.Tr([html.Th(col) for col in dataframe.columns])] +

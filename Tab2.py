@@ -13,7 +13,7 @@ from functions import *
    # .rename(columns={'car':'Races Completed'})
     #.sort_values('time', ascending=True)
 
-
+#current-race = 1
 
 
 # Genarte table
@@ -22,30 +22,36 @@ def gen_tab2(results_df):
         html.Div(id='race', children=[
             daq.NumericInput(
             id='my-daq-numericinput',
-            max=40,
-            value=5,
+            max=60,
+            value=1,
             label='Race Number',
             labelPosition='top',
             min=1), 
             html.Div(id='lanes', children=[
             html.H3('Lanes'),
+            #html.H3(results_df.loc['race']),
 
             html.Div(id='lane1', children=[
-                html.H4('Lane 1'),
-                html.H5('Joey Chestnut'),
+                html.H4('Lane 0'),
+                html.Div(id='lane1-name'),
+                html.H5('Master'),
                 daq.LEDDisplay(
                     id='lane1-leddisplay',
-                    value='3.141',
+                    value=2.140,
                     label='Time',
                     labelPosition='bottom',
                     size='20',
                     color="#FF5E5E",
                     backgroundColor="#000000"
                     ), 
-            ], style={'border': 'solid','width': '20%', 'display': 'inline-block', 'text-align': 'center'}),
+            ], 
+            className="three columns",
+            style={'background-color':'#ffd700','border': 'solid', 'border-color':'#ffd700','text-align': 'center'},
+            ),
 
-                        html.Div(id='lane2', children=[
+            html.Div(id='lane2', children=[
                 html.H4('Lane 2'),
+                html.Div(id='lane2-name'),
                 html.H5('Joey Chestnut'),
                 daq.LEDDisplay(
                     id='lane1-leddisplay',
@@ -56,21 +62,11 @@ def gen_tab2(results_df):
                     color="#FF5E5E",
                     backgroundColor="#000000"
                     ), 
-            ], style={'border': 'solid','width': '20%', 'display': 'inline-block', 'text-align': 'center'}),
+            ], 
+            className="three columns",
+            style={'background-color':'#cd7f32','border': 'solid', 'text-align': 'center'}),
 
-            html.Div(id='lane3', children=[
-                html.H4('Lane 3'),
-                html.H5('Joey Chestnut'),
-                daq.LEDDisplay(
-                    id='lane1-leddisplay',
-                    value='3.141',
-                    label='Time',
-                    labelPosition='bottom',
-                    size='20',
-                    color="#FF5E5E",
-                    backgroundColor="#000000"
-                    ), 
-            ], style={'border': 'solid','width': '20%', 'display': 'inline-block', 'text-align': 'center'}),
+            html.Div(id='lane3', className="three columns"),
 
             html.Div(id='lane4', children=[
                 html.H4('Lane 4'),
@@ -84,12 +80,22 @@ def gen_tab2(results_df):
                     color="#FF5E5E",
                     backgroundColor="#000000"
                     ), 
-            ], style={'border': 'solid','width': '20%', 'display': 'inline-block', 'text-align': 'center'}),
+            ], 
+            className="two columns",
+            style={'border': 'solid', 'text-align': 'center'}),
+            html.Div(id='race-controls', children=[
+                html.Button('Get Results', id='button-results'),
+                html.Button('Force Race End', id='button-end'),
+                html.Button('Next Race', id='button-next'),
+            ], 
+            style={'margin': '80px' , 'text-align': 'center'},
+            className="ten columns"), 
 
 
-            ]), 
+            ]),
 
-        ], style={'width': '70%', 'display': 'inline-block'}),
+
+        ], className="nine columns"),
         
         html.Div(id='leader-board', children=[
             html.H3('Fastest Average Time'),
@@ -97,6 +103,9 @@ def gen_tab2(results_df):
             generate_table(results_df),
 
 
-        ],style={'border': 'solid', 'width': '20%', 'display': 'inline-block'}),
+        ],
+        className="three columns",        
+        style={'border': 'solid'}),
 
-        ], style={'width': '100%', 'display': 'inline-block'})
+        ], style={'display': 'inline'}
+        )

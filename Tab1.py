@@ -31,6 +31,72 @@ def gen_tab1():
             html.Button('Connect', id='connect-button'),
             html.H3('Lane Order'),
             html.Button('Reverse Lanes', id='lane-reverse-button'),
+            # Track lanes  'on' reads, 'on4' sets
+            dcc.RadioItems(
+                id='lane-number',
+                options=[
+                    {'label': '4 Lanes', 'value': 'on4'},
+                    {'label': '6 Lanes', 'value': 'on6'},
+                ],
+                #value='on4', 
+                labelStyle={'display': 'inline-block'}
+                ) ,
+
+             # Lane Character 'ol' reads, 'ol1' sets to '1'
+            dcc.RadioItems(
+                id='lane-character',
+                options=[
+                    {'label': 'Set to Digit', 'value': 'ol1'},
+                    {'label': 'Set to Letter', 'value': 'ol2'},
+                ],
+                #value='ol1', 
+                labelStyle={'display': 'inline-block'}
+                ) ,
+                        
+            # Lane Place character 'op' reads, 'op2' sets to '1'
+            dcc.RadioItems(
+                id='place-character',
+                options=[
+                    {'label': '4 Lanes', 'value': 'op2'},
+                    {'label': '6 Lanes', 'value': '6'},
+                ],
+                value='op2', labelStyle={'display': 'inline-block'}
+                ) ,
+           
+
+            # om - lane mask, 'om0' resets to all lanes
+
+
+            # od - decimal places 3,4,5 options
+            dcc.RadioItems(
+                id='decimal-places',
+                options=[
+                    {'label': '3 digits', 'value': 'od3'},
+                    {'label': '4 digits', 'value': 'od4'},
+                    {'label': '5 digits', 'value': 'od5'},
+                ],
+                value='od4', labelStyle={'display': 'inline-block'}
+                ) ,
+
+            # or reset delay - 0, 10, 30
+            dcc.RadioItems(
+                id='reset-delay',
+                options=[
+                    {'label': '3 digits', 'value': 'or0'},
+                    {'label': '4 digits', 'value': 'or10'},
+                    {'label': '5 digits', 'value': 'or30'},
+                ],
+                value='or', labelStyle={'display': 'inline-block'}
+                ) ,
+            # ov - reverse lane numbering
+            dcc.RadioItems(
+                id='reset-delay',
+                options=[
+                    {'label': '1,2,3,4', 'value': 'ov0'},
+                    {'label': '4,3,2,1', 'value': 'ov1'},
+                ],
+                value='ov1', labelStyle={'display': 'inline-block'}
+                ) ,          
     ]) 
 
 
@@ -43,3 +109,6 @@ def serialwrite(code):
     #laneresults = results.decode().split()
     #print(laneresults)
     return results
+
+  #
+  # reverse lane order = 'ov1'+'\r\n'
