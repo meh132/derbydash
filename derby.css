@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-areas: "Race-Number Header Header Header Leaders" "Lane-1 Lane-2 Lane-3 Lane-4 Leaders" "Race-Controls Race-Controls Race-Controls Race-Controls Race-Controls";
+  }
+  
+  .Header { grid-area: Header; }
+  
+  .Race-Number { grid-area: Race-Number; }
+  
+  .Lane-1 { grid-area: Lane-1; }
+  
+  .Lane-2 { grid-area: Lane-2; }
+  
+  .Lane-3 { grid-area: Lane-3; }
+  
+  .Lane-4 { grid-area: Lane-4; }
+  
+  .Leaders { grid-area: Leaders; }
+  
+  .Race-Controls { grid-area: Race-Controls; }

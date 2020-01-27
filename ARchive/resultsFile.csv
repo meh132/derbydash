@@ -1,0 +1,193 @@
+,race,lane,car,name,time,place,den,category
+0,5,1,4,"Capone, Declan",4.3479,3,1 - TIGER,Pack
+1,5,2,5,"Donnarumma, Liam",3.9091,2,1 - TIGER,Pack
+2,5,3,6,"Horan, Theodore",3.2966,1,1 - TIGER,Pack
+3,5,4,7,"McManus, Patrick",4.4745,4,1 - TIGER,Pack
+4,6,1,5,"Donnarumma, Liam",3.7086,1,1 - TIGER,Pack
+5,6,2,8,"Rosborough, Jack",5.1045,4,1 - TIGER,Pack
+6,6,3,7,"McManus, Patrick",4.1815,2,1 - TIGER,Pack
+7,6,4,4,"Capone, Declan",4.3765,3,1 - TIGER,Pack
+8,7,1,7,"McManus, Patrick",4.0871,3,1 - TIGER,Pack
+9,7,2,4,"Capone, Declan",3.9382,2,1 - TIGER,Pack
+10,7,3,8,"Rosborough, Jack",7.8836,4,1 - TIGER,Pack
+11,7,4,6,"Horan, Theodore",3.3861,1,1 - TIGER,Pack
+12,8,1,6,"Horan, Theodore",3.2761,1,1 - TIGER,Pack
+13,8,2,7,"McManus, Patrick",4.0535,3,1 - TIGER,Pack
+14,8,3,5,"Donnarumma, Liam",3.7474,2,1 - TIGER,Pack
+15,8,4,8,"Rosborough, Jack",9.9999,,1 - TIGER,Pack
+16,9,1,8,"Rosborough, Jack",9.9999,,1 - TIGER,Pack
+17,9,2,6,"Horan, Theodore",3.364,1,1 - TIGER,Pack
+18,9,3,4,"Capone, Declan",3.9851,3,1 - TIGER,Pack
+19,9,4,5,"Donnarumma, Liam",3.6711,2,1 - TIGER,Pack
+20,1,1,1,"Day, Arthur",3.9565,1,0 - LION,Lion
+21,1,2,2,"Peterson, Reed",9.9999,,0 - LION,Lion
+22,1,3,3,"Repsher, Miles",5.2363,2,0 - LION,Lion
+23,1,4,49,"Donnarumma, Cole",9.9999,,Sibling,Lion
+24,2,1,49,"Donnarumma, Cole",9.9999,4,Sibling,Lion
+25,2,2,1,"Day, Arthur",3.9694,1,0 - LION,Lion
+26,2,3,2,"Peterson, Reed",5.0973,3,0 - LION,Lion
+27,2,4,3,"Repsher, Miles",4.8924,2,0 - LION,Lion
+28,3,1,3,"Repsher, Miles",4.8827,2,0 - LION,Lion
+29,3,2,49,"Donnarumma, Cole",9.9999,,Sibling,Lion
+30,3,3,1,"Day, Arthur",3.9733,1,0 - LION,Lion
+31,3,4,2,"Peterson, Reed",5.5328,3,0 - LION,Lion
+32,4,1,2,"Peterson, Reed",5.0884,3,0 - LION,Lion
+33,4,2,3,"Repsher, Miles",4.9466,2,0 - LION,Lion
+34,4,3,49,"Donnarumma, Cole",8.667,4,Sibling,Lion
+35,4,4,1,"Day, Arthur",4.3784,1,0 - LION,Lion
+36,10,1,9,"Barthelmas, Aiden",3.8241,3,2 - WOLF,Pack
+37,10,2,10,"Edmonds, Harvey",3.4089,1,2 - WOLF,Pack
+38,10,3,11,"Grabitzky, Sebastian",9.9999,,2 - WOLF,Pack
+39,10,4,12,"Hancock, James",3.5213,2,2 - WOLF,Pack
+40,11,1,13,"Kalinowski, Alek",3.7762,4,2 - WOLF,Pack
+41,11,2,14,"Kelley, Andrew",3.3857,3,2 - WOLF,Pack
+42,11,3,15,"Knapp, Evan",3.3718,2,2 - WOLF,Pack
+43,11,4,16,"Kraszewski, Jack",3.2445,1,2 - WOLF,Pack
+44,12,1,10,"Edmonds, Harvey",3.3651,1,2 - WOLF,Pack
+45,12,2,13,"Kalinowski, Alek",3.7774,2,2 - WOLF,Pack
+46,12,3,18,"Straka, Trevor",6.0252,4,2 - WOLF,Pack
+47,12,4,9,"Barthelmas, Aiden",4.2808,3,2 - WOLF,Pack
+48,13,1,11,"Grabitzky, Sebastian",3.8934,4,2 - WOLF,Pack
+49,13,2,12,"Hancock, James",3.6517,3,2 - WOLF,Pack
+50,13,3,14,"Kelley, Andrew",3.428,2,2 - WOLF,Pack
+51,13,4,17,"Siebeneck, Jack",3.4223,1,2 - WOLF,Pack
+52,14,1,12,"Hancock, James",3.6788,2,2 - WOLF,Pack
+53,14,2,9,"Barthelmas, Aiden",4.1075,4,2 - WOLF,Pack
+54,14,3,13,"Kalinowski, Alek",3.7821,3,2 - WOLF,Pack
+55,14,4,14,"Kelley, Andrew",3.4974,1,2 - WOLF,Pack
+56,15,1,15,"Knapp, Evan",3.385,2,2 - WOLF,Pack
+57,15,2,16,"Kraszewski, Jack",3.2577,1,2 - WOLF,Pack
+58,15,3,17,"Siebeneck, Jack",3.4393,3,2 - WOLF,Pack
+59,15,4,18,"Straka, Trevor",5.2137,4,2 - WOLF,Pack
+60,16,1,14,"Kelley, Andrew",3.4352,3,2 - WOLF,Pack
+61,16,2,17,"Siebeneck, Jack",3.4133,2,2 - WOLF,Pack
+62,16,3,10,"Edmonds, Harvey",3.3774,1,2 - WOLF,Pack
+63,16,4,15,"Knapp, Evan",9.9999,,2 - WOLF,Pack
+64,17,1,16,"Kraszewski, Jack",3.2198,1,2 - WOLF,Pack
+65,17,2,18,"Straka, Trevor",5.9372,4,2 - WOLF,Pack
+66,17,3,9,"Barthelmas, Aiden",4.4102,3,2 - WOLF,Pack
+67,17,4,11,"Grabitzky, Sebastian",3.9543,2,2 - WOLF,Pack
+68,18,1,17,"Siebeneck, Jack",3.4233,2,2 - WOLF,Pack
+69,18,2,11,"Grabitzky, Sebastian",3.799,3,2 - WOLF,Pack
+70,18,3,16,"Kraszewski, Jack",3.1981,1,2 - WOLF,Pack
+71,18,4,13,"Kalinowski, Alek",3.931,4,2 - WOLF,Pack
+72,19,1,18,"Straka, Trevor",5.2892,3,2 - WOLF,Pack
+73,19,2,15,"Knapp, Evan",3.3872,1,2 - WOLF,Pack
+74,19,3,12,"Hancock, James",3.694,2,2 - WOLF,Pack
+75,19,4,10,"Edmonds, Harvey",9.9999,,2 - WOLF,Pack
+76,20,1,19,"Gagne, Jameson",3.2439,2,3 - BEAR,Pack
+77,20,2,20,"Glose, Owen",3.3734,4,3 - BEAR,Pack
+78,20,3,21,"Hollis, Dylan",3.1815,1,3 - BEAR,Pack
+79,20,4,22,"Horan, Robert",3.3516,3,3 - BEAR,Pack
+80,21,1,23,"Kerls, Liam",3.3098,2,3 - BEAR,Pack
+81,21,2,24,"Ketchen, Scott",3.3012,1,3 - BEAR,Pack
+82,21,3,25,"Letts, Garrison",4.1744,3,3 - BEAR,Pack
+83,21,4,0,--,9.9999,,-,-
+84,22,1,20,"Glose, Owen",3.273,2,3 - BEAR,Pack
+85,22,2,23,"Kerls, Liam",3.2922,3,3 - BEAR,Pack
+86,22,3,19,"Gagne, Jameson",3.2124,1,3 - BEAR,Pack
+87,22,4,24,"Ketchen, Scott",3.3266,4,3 - BEAR,Pack
+88,23,1,21,"Hollis, Dylan",3.2061,1,3 - BEAR,Pack
+89,23,2,22,"Horan, Robert",3.3689,2,3 - BEAR,Pack
+90,23,3,0,--,9.9999,,-,-
+91,23,4,25,"Letts, Garrison",4.2651,3,3 - BEAR,Pack
+92,24,1,22,"Horan, Robert",3.3217,3,3 - BEAR,Pack
+93,24,2,25,"Letts, Garrison",4.3342,4,3 - BEAR,Pack
+94,24,3,24,"Ketchen, Scott",3.2918,2,3 - BEAR,Pack
+95,24,4,19,"Gagne, Jameson",3.2242,1,3 - BEAR,Pack
+96,25,1,0,--,9.9999,,-,-
+97,25,2,21,"Hollis, Dylan",3.2151,1,3 - BEAR,Pack
+98,25,3,20,"Glose, Owen",3.2464,2,3 - BEAR,Pack
+99,25,4,23,"Kerls, Liam",3.3347,3,3 - BEAR,Pack
+100,26,1,24,"Ketchen, Scott",3.3174,3,3 - BEAR,Pack
+101,26,2,0,--,9.9999,,-,-
+102,26,3,22,"Horan, Robert",3.2665,1,3 - BEAR,Pack
+103,26,4,20,"Glose, Owen",3.303,2,3 - BEAR,Pack
+104,27,1,25,"Letts, Garrison",4.4633,4,3 - BEAR,Pack
+105,27,2,19,"Gagne, Jameson",3.232,1,3 - BEAR,Pack
+106,27,3,23,"Kerls, Liam",3.3885,2,3 - BEAR,Pack
+107,27,4,21,"Hollis, Dylan",3.8063,3,3 - BEAR,Pack
+108,28,1,26,"Blackler, Caleb",3.965,4,4 - WEBLOS I,Pack
+109,28,2,28,"Edmonds, Teddy",3.5408,3,4 - WEBLOS I,Pack
+110,28,3,29,"Endres, Kellam",3.5264,2,4 - WEBLOS I,Pack
+111,28,4,30,"Kelly, Maurice (Joe)",3.3958,1,4 - WEBLOS I,Pack
+112,29,1,31,"Longo, Derek",3.569,3,4 - WEBLOS I,Pack
+113,29,2,32,"McBride, Pat",3.4402,2,4 - WEBLOS I,Pack
+114,29,3,33,"Meyers, William",4.9613,4,4 - WEBLOS I,Pack
+115,29,4,34,"VanMarkwyk, Niko",3.3115,1,4 - WEBLOS I,Pack
+116,30,1,28,"Edmonds, Teddy",3.5764,1,4 - WEBLOS I,Pack
+117,30,2,31,"Longo, Derek",3.6003,2,4 - WEBLOS I,Pack
+118,30,3,35,"Ward, Patrick",4.0494,4,4 - WEBLOS I,Pack
+119,30,4,26,"Blackler, Caleb",3.956,3,4 - WEBLOS I,Pack
+120,31,1,29,"Endres, Kellam",3.4698,3,4 - WEBLOS I,Pack
+121,31,2,30,"Kelly, Maurice (Joe)",3.448,2,4 - WEBLOS I,Pack
+122,31,3,32,"McBride, Pat",3.3963,1,4 - WEBLOS I,Pack
+123,31,4,33,"Meyers, William",5.0806,4,4 - WEBLOS I,Pack
+124,32,1,30,"Kelly, Maurice (Joe)",3.3077,1,4 - WEBLOS I,Pack
+125,32,2,26,"Blackler, Caleb",3.8401,4,4 - WEBLOS I,Pack
+126,32,3,31,"Longo, Derek",3.6298,3,4 - WEBLOS I,Pack
+127,32,4,32,"McBride, Pat",3.4593,2,4 - WEBLOS I,Pack
+128,33,1,33,"Meyers, William",5.002,4,4 - WEBLOS I,Pack
+129,33,2,34,"VanMarkwyk, Niko",3.3922,1,4 - WEBLOS I,Pack
+130,33,3,28,"Edmonds, Teddy",3.5303,2,4 - WEBLOS I,Pack
+131,33,4,35,"Ward, Patrick",4.1911,3,4 - WEBLOS I,Pack
+132,34,1,32,"McBride, Pat",3.4723,3,4 - WEBLOS I,Pack
+133,34,2,29,"Endres, Kellam",3.4696,2,4 - WEBLOS I,Pack
+134,34,3,34,"VanMarkwyk, Niko",3.3034,1,4 - WEBLOS I,Pack
+135,34,4,28,"Edmonds, Teddy",3.5114,4,4 - WEBLOS I,Pack
+136,35,1,35,"Ward, Patrick",4.0911,3,4 - WEBLOS I,Pack
+137,35,2,33,"Meyers, William",4.9436,4,4 - WEBLOS I,Pack
+138,35,3,30,"Kelly, Maurice (Joe)",3.3377,1,4 - WEBLOS I,Pack
+139,35,4,31,"Longo, Derek",3.6442,2,4 - WEBLOS I,Pack
+140,36,1,34,"VanMarkwyk, Niko",3.3588,1,4 - WEBLOS I,Pack
+141,36,2,35,"Ward, Patrick",3.7179,3,4 - WEBLOS I,Pack
+142,36,3,26,"Blackler, Caleb",3.8616,4,4 - WEBLOS I,Pack
+143,36,4,29,"Endres, Kellam",3.5216,2,4 - WEBLOS I,Pack
+144,37,1,36,"Hancock, Daniel",3.3094,2,5 - WEBLOS II,Pack
+145,37,2,37,"Ketchen, Sean",3.2619,1,5 - WEBLOS II,Pack
+146,37,3,38,"Pausley, Sean",3.4752,3,5 - WEBLOS II,Pack
+147,37,4,39,"Terry, Ian",8.0588,4,5 - WEBLOS II,Pack
+148,38,1,39,"Terry, Ian",3.3102,3,5 - WEBLOS II,Pack
+149,38,2,36,"Hancock, Daniel",3.298,2,5 - WEBLOS II,Pack
+150,38,3,37,"Ketchen, Sean",3.2329,1,5 - WEBLOS II,Pack
+151,38,4,38,"Pausley, Sean",3.4997,4,5 - WEBLOS II,Pack
+152,39,1,38,"Pausley, Sean",3.4304,4,5 - WEBLOS II,Pack
+153,39,2,39,"Terry, Ian",3.3743,3,5 - WEBLOS II,Pack
+154,39,3,36,"Hancock, Daniel",3.2002,1,5 - WEBLOS II,Pack
+155,39,4,37,"Ketchen, Sean",3.2923,2,5 - WEBLOS II,Pack
+156,40,1,37,"Ketchen, Sean",3.2506,2,5 - WEBLOS II,Pack
+157,40,2,38,"Pausley, Sean",3.4438,4,5 - WEBLOS II,Pack
+158,40,3,39,"Terry, Ian",3.4001,3,5 - WEBLOS II,Pack
+159,40,4,36,"Hancock, Daniel",3.2249,1,5 - WEBLOS II,Pack
+160,41,1,40,"Donnarumma, Rob",4.5533,4,Leader,Anything Goes 5
+161,41,2,41,"Koch, John",3.2706,1,Leader,Anything Goes 5
+162,41,3,42,"Straka, Josh",3.7997,3,Leader,Anything Goes 5
+163,41,4,44,"Kelly, Jay",3.3894,2,Leader,Anything Goes 5
+164,42,1,46,"Straka, Samantha",6.3946,3,Sibling,Anything Goes 5
+165,42,2,47,"Straka, Julienne",4.3798,2,Sibling,Anything Goes 5
+166,42,3,48,"McBride, Elisa",9.9999,4,Sibling,Anything Goes 5
+167,42,4,50,"Blacker, Steven",3.2998,1,Leader,Anything Goes 5
+168,43,1,41,"Koch, John",3.2578,1,Leader,Anything Goes 5
+169,43,2,46,"Straka, Samantha",5.964,4,Sibling,Anything Goes 5
+170,43,3,40,"Donnarumma, Rob",4.3022,2,Leader,Anything Goes 5
+171,43,4,47,"Straka, Julienne",5.8314,3,Sibling,Anything Goes 5
+172,44,1,42,"Straka, Josh",3.7963,3,Leader,Anything Goes 5
+173,44,2,44,"Kelly, Jay",3.3509,2,Leader,Anything Goes 5
+174,44,3,50,"Blacker, Steven",3.2767,1,Leader,Anything Goes 5
+175,44,4,48,"McBride, Elisa",9.9999,4,Sibling,Anything Goes 5
+176,45,1,44,"Kelly, Jay",3.3905,1,Leader,Anything Goes 5
+177,45,2,48,"McBride, Elisa",9.9999,3,Sibling,Anything Goes 5
+178,45,3,47,"Straka, Julienne",4.293,2,Sibling,Anything Goes 5
+179,45,4,40,"Donnarumma, Rob",9.9999,4,Leader,Anything Goes 5
+180,46,1,50,"Blacker, Steven",3.2853,2,Leader,Anything Goes 5
+181,46,2,42,"Straka, Josh",3.9138,3,Leader,Anything Goes 5
+182,46,3,41,"Koch, John",3.2636,1,Leader,Anything Goes 5
+183,46,4,46,"Straka, Samantha",6.2843,4,Sibling,Anything Goes 5
+184,47,1,47,"Straka, Julienne",4.8793,4,Sibling,Anything Goes 5
+185,47,2,50,"Blacker, Steven",3.3054,1,Leader,Anything Goes 5
+186,47,3,44,"Kelly, Jay",3.4212,3,Leader,Anything Goes 5
+187,47,4,41,"Koch, John",3.3103,2,Leader,Anything Goes 5
+188,48,1,48,"McBride, Elisa",4.8793,4,Sibling,Anything Goes 5
+189,48,2,40,"Donnarumma, Rob",3.3054,1,Leader,Anything Goes 5
+190,48,3,46,"Straka, Samantha",3.4212,3,Sibling,Anything Goes 5
+191,48,4,42,"Straka, Josh",3.3103,2,Leader,Anything Goes 5

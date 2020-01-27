@@ -48,7 +48,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app.config.suppress_callback_exceptions = True
+#app.config.suppress_callback_exceptions = True
 
 # for dyanmic
 app.config['suppress_callback_exceptions'] = True
@@ -105,6 +105,19 @@ def update_output(list_of_contents, list_of_names, list_of_dates):
 # update cars for a lane, lanes will pick up their value
 ### how do we update more values than children, can we call out specific values
 ## can we update style to show winner??
+@app.callback(
+    Output('lane1-name', 'children'),
+    [Input('my-daq-numericinput', 'value')])
+def update_output(value):
+    carNum = races.loc[value,'Lane 1']
+    return carNum
+
+@app.callback(
+    Output('lane2-name', 'children'),
+    [Input('my-daq-numericinput', 'value')])
+def update_output(value):
+    carNum = races.loc[value,'Lane 2']
+    return carNum
 
 @app.callback(
     Output('lane1', 'children'),
@@ -119,21 +132,21 @@ def update_output(value):
     color = colors[place]
     #color = colors[0]
     return html.Div([
-        html.H4('Lane 1'),
-        html.H5(carNum ),
-        html.H5(place),
-        #html.H5(color),
-        html.H4(name),
-        daq.LEDDisplay(
-            id='lane1-leddisplay',
-            value=time,
-            label='Time',
-            labelPosition='bottom',
-            size='20',
-            color="#FF5E5E",
-            backgroundColor="#000000"
-            ), 
-            ],
+                html.H4('Lane 1'),
+                html.H5(carNum ),
+                html.H5(place),
+                #html.H5(color),
+                html.H4(name),
+                daq.LEDDisplay(
+                    id='lane1-leddisplay',
+                    value=time,
+                    label='Time',
+                    labelPosition='bottom',
+                    size='20',
+                    color="#FF5E5E",
+                    backgroundColor="#000000"
+                    ), 
+            ], 
             style={'border-radius': '25px', 'background-color': color,'border': 'solid', 'text-align': 'center'})
 
 @app.callback(
@@ -149,20 +162,20 @@ def update_output(value):
     #color = colors[place]
     color = colors[0]
     return html.Div([
-        html.H4('Lane 2'),
-        html.H5(carNum ),
-        html.H5(place),
-        #html.H5(color),
-        html.H4(name),
-        daq.LEDDisplay(
-            id='lane2-leddisplay',
-            value=time,
-            label='Time',
-            labelPosition='bottom',
-            size='20',
-            color="#FF5E5E",
-            backgroundColor="#000000"
-            ), 
+                html.H4('Lane 2'),
+                html.H5(carNum ),
+                html.H5(place),
+                #html.H5(color),
+                html.H4(name),
+                daq.LEDDisplay(
+                    id='lane2-leddisplay',
+                    value=time,
+                    label='Time',
+                    labelPosition='bottom',
+                    size='20',
+                    color="#FF5E5E",
+                    backgroundColor="#000000"
+                    ), 
             ], 
             style={'border-radius': '25px', 'background-color': color,'border': 'solid', 'text-align': 'center'})
 
@@ -173,55 +186,57 @@ def update_output(value):
 def update_output(value):
     carNum = races.loc[value,'Lane 3']
     name = racers.loc[carNum,'Name']
+
     ### Results if available
     time = resultsdf[(resultsdf['race']==value) & (resultsdf['lane']==3)]['time']
     place = int(resultsdf[(resultsdf['race']==value) & (resultsdf['lane']==3)]['place'])
     color = colors[place]
     #color = colors[0]
     return html.Div([
-        html.H4('Lane 3'),
-        html.H5(carNum ),
-        html.H5(place),
-        #html.H5(color),
-        html.H4(name),
-        daq.LEDDisplay(
-            id='lane3-leddisplay',
-            value=time,
-            label='Time',
-            labelPosition='bottom',
-            size='20',
-            color="#FF5E5E",
-            backgroundColor="#000000"
-            ), 
+                html.H4('Lane 3'),
+                html.H5(carNum ),
+                html.H5(place),
+                #html.H5(color),
+                html.H4(name),
+                daq.LEDDisplay(
+                    id='lane3-leddisplay',
+                    value=time,
+                    label='Time',
+                    labelPosition='bottom',
+                    size='20',
+                    color="#FF5E5E",
+                    backgroundColor="#000000"
+                    ), 
             ], 
             style={'border-radius': '25px', 'background-color': color,'border': 'solid', 'text-align': 'center'})
 
-@app.callback(
+ @app.callback(
     Output('lane4', 'children'),
     [Input('my-daq-numericinput', 'value')])
 def update_output(value):
     carNum = races.loc[value,'Lane 4']
     name = racers.loc[carNum,'Name']
+
     ### Results if available
     time = resultsdf[(resultsdf['race']==value) & (resultsdf['lane']==4)]['time']
     place = int(resultsdf[(resultsdf['race']==value) & (resultsdf['lane']==4)]['place'])
     color = colors[place]
     #color = colors[0]
     return html.Div([
-        html.H4('Lane 4'),
-        html.H5(carNum ),
-        html.H5(place),
-        #html.H5(color),
-        html.H4(name),
-        daq.LEDDisplay(
-            id='lane4-leddisplay',
-            value=time,
-            label='Time',
-            labelPosition='bottom',
-            size='20',
-            color="#FF5E5E",
-            backgroundColor="#000000"
-            ), 
+                html.H4('Lane 4'),
+                html.H5(carNum ),
+                html.H5(place),
+                #html.H5(color),
+                html.H4(name),
+                daq.LEDDisplay(
+                    id='lane4-leddisplay',
+                    value=time,
+                    label='Time',
+                    labelPosition='bottom',
+                    size='20',
+                    color="#FF5E5E",
+                    backgroundColor="#000000"
+                    ), 
             ], 
             style={'border-radius': '25px', 'background-color': color,'border': 'solid', 'text-align': 'center'})           
 

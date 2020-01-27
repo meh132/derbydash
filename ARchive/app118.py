@@ -14,9 +14,10 @@ import plotly.graph_objs as go
 results = pd.read_csv('./resultsFile.csv')
 results['carstring'] = results['car'].astype('str')
 #df.sort_values(by=['col1', 'col2'])
-allresults = results.sort_values(by=['time'], ascending=False)
+allresults = results.sort_values(by=['time'], ascending=True)
 
-#results = allresults.loc[['name','car','time']]
+#results = allresults[['name','car','time']].
+topresults = allresults.loc[1:5,['name','car','time']]
 
 #avg = allresults.groupby(['car','name','lane']).agg({'car':'size', 'time':'mean'}).rename(columns={'car':'Races Completed'})        .reset_index()
 
@@ -103,50 +104,63 @@ app.layout = html.Div(children=[
             margin=go.layout.Margin(l=40, r=0, t=40, b=30)
             )
             ),
-            style={'width': '50%', 'display': 'inline-block'},
+            style={'width': '20%', 'display': 'inline-block'},
             id='my-graph'
         ),
         html.Div(children=[
-        html.Div([
-            daq.Indicator(
-                id='my-daq-indicator',
-                value=True,
-                label="Lane 1",
-                color="#00cc96"),
-            daq.LEDDisplay(
-            id='my-daq-leddisplay1',
-            value='3.102',
-            color="#FF5E5E",
-            backgroundColor="#000000"
-            )],
-            ),
+        html.Div(daq.LEDDisplay(
+        id='my-daq-leddisplay1',
+        value='3.102',
+        label="Lane 1",
+        color="#FF5E5E",
+        backgroundColor="#A9A9A9"
+        ),style={'width': '20%','display': 'inline-block'}),
         html.Div(daq.LEDDisplay(
         id='my-daq-leddisplay2',
         value='3.102',
         label="Lane 2",
         color="#FF5E5E",
         backgroundColor="#A9A9A9"
-        )),
+        ),style={'width': '20%','display': 'inline-block'}),
         html.Div(daq.LEDDisplay(
         id='my-daq-leddisplay3',
         value='3.102',
         label="Lane 3",
         color="#FF5E5E",
         backgroundColor="#A9A9A9"
-        )),
+        ),style={'width': '20%','display': 'inline-block'}),
         html.Div(daq.LEDDisplay(
         id='my-daq-leddisplay4',
         value='3.502',
         label="Lane 4",
         color="#FF5E5E",
         backgroundColor="#A9A9A9"
-        ))], style={'width': '25%', 'display': 'inline-block'}
+        ),style={'width': '20%','display': 'inline-block'})], style={'width': '100%','display': 'inline-block'}
         )
         ], 
-        style={'width': '100%', 'display': 'inline-block'})
-], style={'width': '100%' })
+        style={'width': '100%', 'display': 'inline-block', 'align': 'top'}),
+    dash_table.DataTable(id='table',
+        columns=[{"name": i, "id": i} for i in topresults.columns],
+        data=allresults.to_dict("rows"),
+    ),
+])
 
 
 
 if __name__ == '__main__':
     app.run_server(host='0.0.0.0',debug=True,port=8050)
+
+
+
+
+fig = go.Figure(data=go.Scatter(x=test_df['race'],
+                                            y=test_df['time'],
+                                            mode='markers',
+                                            marker_color=test_df['lane']
+                                            text=test_df['name']))
+            fig.show()                                
+        ])
+
+
+                    
+            
