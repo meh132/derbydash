@@ -17,11 +17,25 @@ from dash.dependencies import Input, Output, State
 import pandas as pd
 
 
+resultsdf = pd.read_csv('./resultsFile.csv')
+#resultsdf = pd.DataFrame(columns=['race', 'lane', 'car', 'name', 'time', 'place', 'den', 'category'])
+
+# Read from CSV to load Races
+races = pd.read_csv('Races.csv')
+races = races.set_index('Race Number')
+
+
+# Read list of racers and cars from CSV
+
+racers = pd.read_csv('Racers.csv')
+racers = racers.set_index('Number')
+
+
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 #app.config.suppress_callback_exceptions = True
-#app.config['suppress_callback_exceptions'] = True
+app.config['suppress_callback_exceptions'] = True
 
 # Set up Tabs
 
@@ -106,8 +120,8 @@ def render_content(tab):
                     html.Div(id='lane1', children=[
                         html.H3('Lane 1'),
                         html.Div([
-                            html.H5(id='car1'),
-                            html.H4(id='name1'),
+                            html.Div(id='car1'),
+                            html.Div(id='name1'),
                         ]),
                         html.Div([
                             daq.LEDDisplay(
@@ -185,7 +199,7 @@ def render_content(tab):
                 html.H4('Upcoming Races', className="eight column"),         
                 html.Div(id='next-race')], 
                     style={'font-size': '200%', 'margin': '80px' , 'text-align': 'center'},
-                    className="eight columns")], 
+                    className="eight columns")]), 
             # second column           
             html.Div(children=[
                 html.H4('Fastest Single Race'),
@@ -193,7 +207,7 @@ def render_content(tab):
                     className="three columns",        
                     style={'font-size': '150%','border': 'solid'})
                     ])
-           )
+           
         ])
         
     elif tab == 'tab-3':
@@ -225,7 +239,7 @@ def update_racers(value):
     name3 = racers.loc[car3,'Name']
     car4 = races.loc[value,'Lane 4']
     name4 = racers.loc[car4,'Name']
-    return car1,name1,car2,name2,car3,name3 car4,name4
+    return car1,name1,car2,name2,car3,name3,car4,name4
 
 
 
@@ -279,9 +293,6 @@ def connect__usb(value):
 
     return ser.name
 
-            html.Button(id='setup-button'),
-            html.H3(id='laneset-results'), 
-            html.H3(id='placeset-results'),
 
 ## CAll back for track set
 @app.callback(
