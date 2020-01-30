@@ -1,0 +1,33 @@
+,race,lane,car,name,time,place,den,category
+0,1,1,1,"Day, Arthur",1.1704,1,0 - LION,Lion
+1,1,2,2,"Peterson, Reed",5.4159,1,0 - LION,Lion
+2,1,3,3,"Repsher, Miles",3.5462,1,0 - LION,Lion
+3,1,4,49,"Donnarumma, Cole",3.7246,1,Sibling,Lion
+0,1,1,1,"Day, Arthur",1.1704,1,0 - LION,Lion
+1,1,2,2,"Peterson, Reed",5.4159,1,0 - LION,Lion
+2,1,3,3,"Repsher, Miles",3.5462,1,0 - LION,Lion
+3,1,4,49,"Donnarumma, Cole",3.7246,1,Sibling,Lion
+0,1,1,1,"Day, Arthur",1.1704,1,0 - LION,Lion
+1,1,2,2,"Peterson, Reed",5.4159,1,0 - LION,Lion
+2,1,3,3,"Repsher, Miles",3.5462,1,0 - LION,Lion
+3,1,4,49,"Donnarumma, Cole",3.7246,1,Sibling,Lion
+0,2,1,49,"Donnarumma, Cole",1.1704,1,Sibling,Lion
+1,2,2,1,"Day, Arthur",5.4159,1,0 - LION,Lion
+2,2,3,2,"Peterson, Reed",3.5462,1,0 - LION,Lion
+3,2,4,3,"Repsher, Miles",3.7246,1,0 - LION,Lion
+0,3,1,3,"Repsher, Miles",1.1704,1,0 - LION,Lion
+1,3,2,49,"Donnarumma, Cole",5.4159,1,Sibling,Lion
+2,3,3,1,"Day, Arthur",3.5462,1,0 - LION,Lion
+3,3,4,2,"Peterson, Reed",3.7246,1,0 - LION,Lion
+0,1,1,1,"Day, Arthur",1.1704,1,0 - LION,Lion
+1,1,2,2,"Peterson, Reed",5.4159,1,0 - LION,Lion
+2,1,3,3,"Repsher, Miles",3.5462,1,0 - LION,Lion
+3,1,4,49,"Donnarumma, Cole",3.7246,1,Sibling,Lion
+0,8,1,6,"Horan, Theodore",1.1704,1,1 - TIGER,Pack
+1,8,2,7,"McManus, Patrick",5.4159,1,1 - TIGER,Pack
+2,8,3,5,"Donnarumma, Liam",3.5462,1,1 - TIGER,Pack
+3,8,4,8,"Rosborough, Jack",3.7246,1,1 - TIGER,Pack
+0,8,1,6,"Horan, Theodore",1.1704,1,1 - TIGER,Pack
+1,8,2,7,"McManus, Patrick",5.4159,1,1 - TIGER,Pack
+2,8,3,5,"Donnarumma, Liam",3.5462,1,1 - TIGER,Pack
+3,8,4,8,"Rosborough, Jack",3.7246,1,1 - TIGER,Pack

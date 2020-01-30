@@ -1,8 +1,8 @@
 ,race,lane,car,name,time,place,den,category
-0,5,1,4,"Capone, Declan",4.3479,3,1 - TIGER,Pack
-1,5,2,5,"Donnarumma, Liam",3.9091,2,1 - TIGER,Pack
-2,5,3,6,"Horan, Theodore",3.2966,1,1 - TIGER,Pack
-3,5,4,7,"McManus, Patrick",4.4745,4,1 - TIGER,Pack
+0,5,1,4,"Capone, Declan",3,1,1 - TIGER,Pack
+1,5,2,5,"Donnarumma, Liam",4,2,1 - TIGER,Pack
+2,5,3,6,"Horan, Theodore",5,3,1 - TIGER,Pack
+3,5,4,7,"McManus, Patrick",6,4,1 - TIGER,Pack
 4,6,1,5,"Donnarumma, Liam",3.7086,1,1 - TIGER,Pack
 5,6,2,8,"Rosborough, Jack",5.1045,4,1 - TIGER,Pack
 6,6,3,7,"McManus, Patrick",4.1815,2,1 - TIGER,Pack

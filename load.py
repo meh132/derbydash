@@ -18,7 +18,8 @@ import pandas as pd
 
 
 # for testing load results
-resultsdf = pd.read_csv('./resultsFile.csv')
+#resultsdf = pd.read_csv('./resultsFile.csv')
+#resultsdf = pd.DataFrame(columns=['race', 'lane', 'car', 'name', 'time', 'place', 'den', 'category'])
 
 # Read from CSV to load Races
 races = pd.read_csv('Races.csv')
@@ -48,12 +49,13 @@ def parse_contents(contents, filename, date):
             races = pd.read_csv(
                 io.StringIO(decoded.decode('utf-8')))
             df = races
-        elif 'csv' in filename:
+        elif 'Results' in filename:
             # Assume that the user uploaded an excel file
             results = pd.read_csv(
                 io.StringIO(decoded.decode('utf-8')))            
             df = results  
-            results.to_csv('resultsFile.csv')  
+            #resultsdf = results
+            #results.to_csv('resultsFile.csv')  
     except Exception as e:
         print(e)
         return html.Div([

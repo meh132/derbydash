@@ -2,6 +2,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_table
+import dash_daq as daq
 
 # Genarte table
 def gen_tab1():
@@ -28,7 +29,9 @@ def gen_tab1():
             html.Div(id='output-data-upload'),
             html.H2('Track Setup'),
             html.H3('Connect to Track'), 
-            html.Button('Connect', id='connect-button'),
+            daq.StopButton(id='connect-button', buttonText='Connect'),
+            html.Div(id='connect-results'),
+            
             html.H3('Lane Order'),
             html.Button('Reverse Lanes', id='lane-reverse-button'),
             # Track lanes  'on' reads, 'on4' sets
@@ -38,7 +41,7 @@ def gen_tab1():
                     {'label': '4 Lanes', 'value': 'on4'},
                     {'label': '6 Lanes', 'value': 'on6'},
                 ],
-                #value='on4', 
+                value='on4', 
                 labelStyle={'display': 'inline-block'}
                 ) ,
 
